@@ -1,20 +1,411 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Types Of Yoga</title>
     <style>
-        .heading{
+        .navbar {
+            width: 1440px;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #ffffff;
+            box-shadow: 0 2px 8px rgb(0, 0, 0);
+            position: fixed;
+            top: 0px;
+            left: 0px
+        }
+
+
+        .logo {
+            font-size: 22px;
+            font-weight: 600;
+            color: #121312;
+        }
+
+        .heading {
             text-align: center;
-            padding: 20px;
-            background:rgb(167, 225, 248);
+            padding: 10px;
+            background-color: #eff6f8;
             color: black;
             font-size: 50px;
         }
+
+        body {
+            background-color: #bbcfdc;
+        }
+
+        .container {
+            flex-direction: row;
+            display: center;
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+            background-color: rgb(113, 171, 192);
+            height: 200px;
+            width: 1000px;
+            margin: 5px;
+            border-radius: 100px;
+            margin: 10px 200px 10px 250px;
+        }
+
+        .item2 {
+            display: flex;
+            align-items: center;
+            background-color: rgb(165, 212, 229);
+            height: 200px;
+            width: 1000px;
+            margin: 5px;
+            border-radius: 100px;
+            margin: 10px 200px 10px 250px;
+        }
+
+        .item:hover {
+            background-color: rgb(38, 115, 143);
+            color: black;
+            transition: 4s;
+            box-shadow: 2px 2px 9px rgb(131, 178, 196);
+        }
+
+        .item2:hover {
+            background-color: rgb(87, 143, 163);
+            color: black;
+            transition: 4s;
+            box-shadow: 2px 2px 9px rgb(198, 196, 196);
+        }
+
+
+        .img1 {
+            border-radius: 100px 0px 0px 100px;
+        }
+
+        .title1 {
+            display: inline-flex;
+            align-items: center;
+            padding: 5px;
+            font-size: 30px;
+        }
+
+        .img2 {
+            border-radius: 0px 100px 100px 0px;
+
+        }
+
+        .title2 {
+            padding: 5px;
+            font-size: 30px;
+            align-items: center;
+            display: inline-flex;
+        }
+
+        .img3 {
+            border-radius: 100px 0px 0px 100px;
+        }
+
+        .title3 {
+            display: inline-flex;
+            align-items: center;
+            padding: 5px;
+            font-size: 30px;
+        }
+
+        .img4 {
+            border-radius: 0px 100px 100px 0px;
+        }
+
+        .title4 {
+            padding: 5px;
+            font-size: 30px;
+            align-items: center;
+            display: inline-flex;
+        }
+
+        .img5 {
+            border-radius: 100px 0px 0px 100px;
+        }
+
+        .title5 {
+            display: inline-flex;
+            align-items: center;
+            padding: 5px;
+            font-size: 30px;
+        }
+
+        .img6 {
+            border-radius: 0px 100px 100px 0px;
+        }
+
+        .title6 {
+            padding: 5px;
+            font-size: 30px;
+            align-items: center;
+            display: inline-flex;
+        }
+
+        .info1 {
+            padding: 10px;
+        }
+
+        .info2 {
+            padding: 20px;
+        }
+
+        .info3 {
+            padding: 10px;
+        }
+
+        .footer {
+            background: #82b2bb;
+            color: black;
+            padding: 40px 20px 10px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 40px;
+            width: 1200px;
+            margin-left: 250px;
+
+        }
+
+        .footer-box {
+            flex: 1 1 250px;
+        }
+
+        .footer-box h3 {
+            margin-bottom: 15px;
+            color: #ffd78a;
+            font-size: 20px;
+        }
+
+        .footer-box p {
+            font-size: 15px;
+
+        }
+
+        .footer-box ul {
+            padding: 0;
+        }
+
+        .footer-box ul li {
+            margin: 8px 0;
+        }
+
+        .footer-box ul li a {
+            color: black;
+            transition: 0.3s;
+        }
+
+        .footer-box ul li a:hover {
+            color: #e0970e;
+            padding-left: 5px;
+        }
+
+        .social-links a {
+            font-size: 22px;
+            margin-right: 10px;
+            color: #ffd78a;
+            transition: 0.3s;
+        }
+
+        .social-links a:hover {
+            color: white;
+        }
+
+        .newsletter {
+            text-align: center;
+            margin: 40px auto;
+            width: 600px;
+        }
+
+        .newsletter-box {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .newsletter input {
+            padding: 12px;
+            width: 60%;
+            border-radius: 5px 0 0 5px;
+        }
+
+        .newsletter button {
+            padding: 12px 20px;
+            border: none;
+            background: #eca92e;
+            color: black;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .newsletter button:hover {
+            background: white;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            border-top: 1px solid #333;
+            margin-top: 30px;
+            padding-top: 10px;
+        }
+
+        .social-icons img {
+            width: 28px;
+            margin: 0 5px;
+            transition: 0.3s;
+        }
+
+        .footer-bottom p {
+            font-size: 14px
+        }
     </style>
 </head>
+
 <body>
-    <img src="../images/types of yoga.jpg" height="350" width="1515"/>
+    <div>
+        <nav class="navbar">
+            <div class="logo">Blissful Yoga Hub</div>
+
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="types.html">Types</a>
+                <a href="benefits.html">Benefits</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+                <a href="signup.html">Signup</a>
+            </div>
+        </nav>
+    </div>
+    <img src="../images/types of yoga.jpg" height="350" width="1515" />
     <div class="heading">Types Of Yoga</div>
-    
-</body>
-</html>
+    <div class="container">
+        <div class="item">
+            <img src="../images/uttanasana.jpg" height="200px" width="250px" class="img1" />
+            <span class="title1">Uttanasana </span>
+            <p>Standing Forward Fold increases balance by grounding and centering our energy while stretching the
+                hamstrings, hips, and calves, promoting stability and relaxation. Standing Forward Fold also relieves
+                tension, improves balance, calms the mind and promotes relaxation. Modification: Bend the knees slightly
+                if there is tightness in the hamstrings or use blocks to bring the floor closer.</p>
+        </div>
+
+        <div class="item2">
+
+            <p>Half Moon Pose improves balance, strengthens the legs, and stretches the hamstrings and
+                hips. This
+                pose develops balance by encouraging us to find stability while extending one leg and arm out,
+                engaging the core, and maintaining a steady and balanced foundation. It also opens the chest and
+                improves overall coordination.</p>
+            <span class="title2">Ardha Chandrasana</span>
+            <img src="../images/Ardha Chandrasana.jpg" height="200px" width="250px" class="img2" />
+        </div>
+
+
+        <div class="item">
+            <img src="../images/virabhadrasana.jpg" height="200px" width="250px" class="img3" />
+            <span class="title3">Virabhadrasana</span>
+            <p>Warrior III strengthens the core, legs, and ankles while promoting balance and stability by challenging
+                us to
+                extend one leg behind while balancing on the other. It also tones the abdominal muscles and improves
+                posture. Modification: Beginners can use a wall or chair for support or keep the toes of the lifted leg
+                on
+                the ground.
+            </p>
+        </div>
+    </div>
+    <div class="item2">
+
+        <p class="info2">This pose is good for balance because it requires concentration and steadiness, challenging us
+            to find
+            stability on one leg while grounding ourselves like a rooted tree.
+            Tree Pose improves focus, concentration, and core strength. It also stretches the thighs, calves, and ankles
+            while improving overall balance. Modification: Beginners can use a wall or chair for support or place their
+            foot against the ankle instead of the inner thigh. And don’t worry, if you fall out of this pose, or any
+            pose for that matter, just get back to the pose and try again. </p>
+        <span class="title4">Vrikshasana</span>
+        <img src="../images/vrikshasana.jpg" height="200px" width="250px" class="img4" />
+    </div>
+    </div>
+    <div class="item">
+        <img src="../images/natarajasana.jpg" height="200px" width="250px" class="img5" />
+        <span class="title5">Natarajasana</span>
+        <P>Dancer's Pose enhances balance by requiring focus and concentration while gracefully balancing on one leg and
+            extending the other leg behind, opening the chest and strengthening the core. Dancer's Pose also enhances
+            focus, grace, and poise. Modification: Beginners can use a wall or chair for support or hold the ankle with
+            one hand instead of reaching with both hands. If you're unable to reach behind to grab your foot, then you
+            can also use a strap around your foot to give you more access to the pose.
+        </P>
+    </div>
+    </div>
+    <div class="item2">
+        <p class="info3">Eagle Pose helps improve balance by requiring us to find equilibrium while wrapping one leg
+            around the other
+            and balancing on one foot, enhancing focus and stability. It also opens the shoulders and stretches the
+            upper back. Modification: If wrapping the leg is challenging, beginners can cross the foot behind the calf
+            or use a strap for assistance.</p>
+        <span class="title6">Garudasana</span>
+        <img src="../images/garudasana.jpg" height="200px" width="250px" class="img6" />
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+
+
+            <div class="footer-box">
+                <h3>Blissful Yoga Hub</h3>
+                <p>Your sanctuary for peace, balance, and holistic well-being.
+                    We offer yoga, meditation, wellness workshops and healing sessions for all age groups.</p>
+            </div>
+
+
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="types.html">Our Programs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-box">
+                <h3>Contact Us</h3>
+                <p><b>Email:</b><a href="mailto:blissfulyogahub07"> blissfulyogahub@gmail.com</a><br /></p>
+                <p><b>Phone:</b> <a href="callus">+91 466723723666</a></p>
+                <p><b>Address:</b>College road,Nashik</p>
+            </div>
+        </div>
+        <div align="center">
+            <div class="social-icons">
+                <img src="../images/instagram.jpg" alt="insta-img" />
+                <img src="../images/facebook-1.jpg" alt="facebook" />
+                <img src="../images/telegram-1.jpg" alt="telegram-img" />
+
+
+            </div>
+        </div>
+
+
+
+
+        <div class="newsletter">
+            <h3>Subscribe to Our Newsletter</h3>
+            <div class="newsletter-box">
+                <input type="email" placeholder="Enter your email...">
+                <button>Subscribe</button>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Blissful Yoga Hub | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    </div>
